@@ -23,7 +23,7 @@ class App extends React.Component {
       return (
         <div style={{opacity: this.state && this.state.played ? 1 : 0}} className="app">
           <img className="app-logo" src={logo} alt="Vote Quimby Logo" />
-          <h1>Site coming soon…</h1>
+          <h1 className="title">Site coming soon…</h1>
         </div>
       );
     }
