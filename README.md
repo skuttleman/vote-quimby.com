@@ -20,8 +20,6 @@ $ npm start
 The app is deployed to vote-quimby.firebaseapp.com and is registered as [vote-quimby.com](http://vote-quimby.com).
 
 ```bash
-$ git clone
-$ cd vote-quimby.com
-$ npm install
-$ npm start
+$ npm run build
+$ firebase deploy
 ```
