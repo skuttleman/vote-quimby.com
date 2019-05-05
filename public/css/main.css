@@ -81,3 +81,7 @@ body {
 .app .albums > li > *:not(:last-child) {
   margin-bottom: 10px;
 }
+
+.app .videos .video iframe {
+  height: 400px;
+}
