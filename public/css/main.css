@@ -52,3 +52,32 @@ body {
 .contents > * {
   max-width: 1024px;
 }
+
+.app .albums .album {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app .albums .album img {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  margin-right: 10px;
+}
+
+.app .albums > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.app .albums .album-tracks {
+  margin-left: 10px;
+}
+
+.app .albums .album-title {
+  font-weight: bold;
+}
+
+.app .albums > li > *:not(:last-child) {
+  margin-bottom: 10px;
+}

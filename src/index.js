@@ -5,10 +5,12 @@ import { Provider } from 'react-redux';
 import { Route, Switch } from 'react-router';
 import { createBrowserHistory } from 'history';
 import { ConnectedRouter } from 'connected-react-router';
+import Albums from './views/Albums';
 import FAQ from './views/FAQ';
 import Home from './views/Home';
 import Nav from './views/Nav';
 import NotFound from './views/NotFound';
+import Videos from './views/Videos';
 
 const history = createBrowserHistory();
 const store = createStore(history);
@@ -24,6 +26,8 @@ ReactDOM.render(
                 <Switch>
                     <Route exact path="/" render={view(Home)} />
                     <Route exact path="/home" render={view(Home)} />
+                    <Route exact path="/albums" render={view(Albums)} />
+                    <Route exact path="/videos" render={view(Videos)} />
                     <Route exact path="/faq" render={view(FAQ)} />
                     <Route render={view(NotFound)} />
                 </Switch>
