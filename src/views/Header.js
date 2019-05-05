@@ -7,8 +7,8 @@ import navs from '../data/navs';
 
 const Header = props => (
     <header>
-        <nav>
-            <UL items={navs} Component={NavItem} {...props} />
+        <nav className="tabs">
+            <UL items={navs} Component={NavItem} activeFn={({href}) => href === props.router.location.pathname} {...props} />
         </nav>
     </header>
 );

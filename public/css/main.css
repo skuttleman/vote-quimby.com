@@ -1,10 +1,5 @@
-.app {
-  color: white;
+.app .home {
   text-align: center;
-}
-
-.app .title {
-  color: white;
 }
 
 .app-logo {
@@ -27,4 +22,33 @@ body {
   margin: 0;
   padding: 10px;
   min-height: 100vh;
+}
+
+.app .tabs a, .app .contents * {
+  color: white;
+}
+
+.app .contents {
+  margin: 10px 0;
+}
+
+.app .faq li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.app .faq .faq-question {
+  font-weight: bold;
+}
+
+.app .faq .faq-answer {
+  color: #ccc;
+}
+
+.contents {
+  display: flex;
+  justify-content: center;
+}
+
+.contents > * {
+  max-width: 1024px;
 }

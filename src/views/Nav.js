@@ -4,9 +4,9 @@ import Header from './Header';
 
 
 const Nav = props => (
-    <main>
+    <main className="app">
         <Header {...props} />
-        <div>{props.children}</div>
+        <div className="contents">{props.children}</div>
     </main>
 );
 
