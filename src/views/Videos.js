@@ -1,6 +1,6 @@
 import React from 'react';
 import UL from '../components/UL';
-import Video from './video';
+import Video from './Video';
 import videos from '../data/videos';
 
 

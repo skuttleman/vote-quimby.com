@@ -7,12 +7,15 @@
   width: auto;
   max-width: calc(100vw - 20px);
   max-height: calc(100vh - 20px);
+}
 
-  @media(max-width: 100vh) {
+@media(min-width: 100vh) {
+  .app-logo {
     max-width: calc(100vh - 20px);
   }
-
-  @media(max-height: 100vw) {
+}
+@media(min-height: 100vw) {
+  .app-logo {
     max-height: calc(100vw - 20px);
   }
 }
@@ -55,7 +58,12 @@ body {
 
 .app .albums .album {
   display: flex;
-  flex-wrap: wrap;
+}
+
+@media(max-width: 960px) {
+  .app .albums .album {
+    flex-direction: column;
+  }
 }
 
 .app .albums .album img {

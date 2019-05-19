@@ -1,38 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import createStore from './store/create';
-import { Provider } from 'react-redux';
-import { Route, Switch } from 'react-router';
+import { Router, Route, Switch, withRouter } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
-import { ConnectedRouter } from 'connected-react-router';
 import Albums from './views/Albums';
 import FAQ from './views/FAQ';
 import Home from './views/Home';
-import Nav from './views/Nav';
+import _Nav from './views/Nav';
 import NotFound from './views/NotFound';
 import Videos from './views/Videos';
 
 const history = createBrowserHistory();
-const store = createStore(history);
-
-const view = Component => router => (
-    <Component router={router} dispatch={store.dispatch} />
-);
+const Nav = withRouter(_Nav);
 
 ReactDOM.render(
-    <Provider store={store}>
-        <ConnectedRouter history={history}>
-            <Nav>
-                <Switch>
-                    <Route exact path="/" render={view(Home)} />
-                    <Route exact path="/home" render={view(Home)} />
-                    <Route exact path="/albums" render={view(Albums)} />
-                    <Route exact path="/videos" render={view(Videos)} />
-                    <Route exact path="/faq" render={view(FAQ)} />
-                    <Route render={view(NotFound)} />
-                </Switch>
-            </Nav>
-        </ConnectedRouter>
-    </Provider>,
+    <Router history={history}>
+        <Nav>
+            <Switch>
+                <Route exact path="/" render={withRouter(Home)} />
+                <Route exact path="/albums" render={withRouter(Albums)} />
+                <Route exact path="/videos" render={withRouter(Videos)} />
+                <Route exact path="/faq" render={withRouter(FAQ)} />
+                <Route render={withRouter(NotFound)} />
+            </Switch>
+        </Nav>
+    </Router>,
     document.getElementById('root')
 );
