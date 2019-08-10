@@ -106,3 +106,7 @@ body {
   padding: 10px;
   border-radius: 5px;
 }
+
+.app .albums .player .player-cover {
+  display: none;
+}
