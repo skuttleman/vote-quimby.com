@@ -110,3 +110,7 @@ body {
 .app .albums .player .player-cover {
   display: none;
 }
+
+.app .albums .player .music-info .title {
+  max-width: calc(100vw - 40px);
+}
