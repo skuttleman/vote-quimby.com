@@ -1,56 +1,69 @@
-import justCant from '../assets/images/just-cant-fuck.jpg';
-import talkNerdy from '../assets/images/talk-nerdy.jpg';
-import footloose from '../assets/images/footloose.jpg';
-import adequately from '../assets/images/adequately.jpg';
-import talkNerdyZip from '../assets/music/talk-nerdy.zip';
-import justCantZip from '../assets/music/just-cant-fuck.zip';
-
 export default [{
-    image: justCant,
+    image: 'https://vote-quimby.s3.amazonaws.com/images/just-cant-fuck.jpg',
     title: 'Just Can\'t Fuck this Last Pint of Musiclar Famine unless the Death Flight arrives by Next Friday (Theoretically)',
-    tracks: [{
-        title: 'Flight 19'
+    playList: [{
+        title: 'Flight 19',
+        url: 'https://vote-quimby.s3.amazonaws.com/just-cant-fuck/01.flight.mp3',
+        artist: ['Vote Quimby']
     }, {
-        title: 'Last Pint of Happiness'
+        title: 'Last Pint of Happiness',
+        url: 'https://vote-quimby.s3.amazonaws.com/just-cant-fuck/02.pint.mp3',
+        artist: ['Vote Quimby']
     }, {
-        title: 'Fuck Recycling (We Should Play Elevator Music)'
+        title: 'Fuck Recycling (We Should Play Elevator Music)',
+        url: 'https://vote-quimby.s3.amazonaws.com/just-cant-fuck/03.recycling.mp3',
+        artist: ['Vote Quimby']
     }, {
-        title: 'Death of a Superhero'
+        title: 'Death of a Superhero',
+        url: 'https://vote-quimby.s3.amazonaws.com/just-cant-fuck/04.superhero.mp3',
+        artist: ['Vote Quimby']
     }, {
-        title: 'Let\'s Go Out Next Friday'
+        title: 'Let\'s Go Out Next Friday',
+        url: 'https://vote-quimby.s3.amazonaws.com/just-cant-fuck/05.friday.mp3',
+        artist: ['Vote Quimby']
     }, {
-        title: 'Just Can\'t Please Her'
+        title: 'Just Can\'t Please Her',
+        url: 'https://vote-quimby.s3.amazonaws.com/just-cant-fuck/06.pleaser.mp3',
+        artist: ['Vote Quimby']
     }, {
-        title: 'Famine 4 (Try the Veal)'
+        title: 'Famine 4 (Try the Veal)',
+        url: 'https://vote-quimby.s3.amazonaws.com/just-cant-fuck/07.famine4.mp3',
+        artist: ['Vote Quimby']
     }, {
-        title: 'Theoretically'
+        title: 'Theoretically',
+        url: 'https://vote-quimby.s3.amazonaws.com/just-cant-fuck/08.theoretically.mp3',
+        artist: ['Vote Quimby']
     }, {
-        title: 'Musicular Bandslaughter'
-    }],
-    link: {
-        label: 'Download',
-        href: justCantZip
-    }
+        title: 'Musicular Bandslaughter',
+        url: 'https://vote-quimby.s3.amazonaws.com/just-cant-fuck/09.musicular.mp3',
+        artist: ['Vote Quimby']
+    }]
 },{
-    image: talkNerdy,
+    image: 'https://vote-quimby.s3.amazonaws.com/images/talk-nerdy.jpg',
     title: 'Talk Nerdy to Me',
-    tracks: [{
-        title: 'Traitors to the Cause'
+    playList: [{
+        title: 'Traitors to the Cause',
+        url: 'https://vote-quimby.s3.amazonaws.com/talk-nerdy/01.traitors.mp3',
+        artist: ['Vote Quimby']
     }, {
-        title: 'Limited Time Only'
+        title: 'Limited Time Only',
+        url: 'https://vote-quimby.s3.amazonaws.com/talk-nerdy/02.limited.mp3',
+        artist: ['Vote Quimby']
     }, {
-        title: 'Sci-Fi Nerd'
+        title: 'Sci-Fi Nerd',
+        url: 'https://vote-quimby.s3.amazonaws.com/talk-nerdy/03.sci-fi.mp3',
+        artist: ['Vote Quimby']
     }, {
-        title: 'Famine 3 (Famished)'
+        title: 'Famine 3 (Famished)',
+        url: 'https://vote-quimby.s3.amazonaws.com/talk-nerdy/04.famine3.mp3',
+        artist: ['Vote Quimby']
     }, {
-        title: 'To Be Continued'
-    }],
-    link: {
-        label: 'Download',
-        href: talkNerdyZip
-    }
+        title: 'To Be Continued',
+        url: 'https://vote-quimby.s3.amazonaws.com/talk-nerdy/05.tbc.mp3',
+        artist: ['Vote Quimby']
+    }]
 },{
-    image: footloose,
+    image: 'https://vote-quimby.s3.amazonaws.com/images/footloose.jpg',
     title: 'Footloose: The Revised Motion Picture Soundtrack',
     tracks: [{
         title: 'Footloose'
@@ -78,7 +91,7 @@ export default [{
         href: 'https://store.cdbaby.com/cd/votequimby2'
     }
 },{
-    image: adequately,
+    image: 'https://vote-quimby.s3.amazonaws.com/images/adequately.jpg',
     title: 'Adequately Prepared to Rock',
     tracks: [{
         title: 'Amalgam'

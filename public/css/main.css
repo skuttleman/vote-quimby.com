@@ -93,3 +93,16 @@ body {
 .app .videos .video iframe {
   height: 400px;
 }
+
+.app .albums .album-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.app .albums .player {
+  height: 180px;
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 5px;
+}

@@ -1,17 +1,20 @@
 import React from 'react';
-import UL from '../components/UL';
+import MusicPlayer from 'react-responsive-music-player';
 import Track from './Track';
+import UL from '../components/UL';
 
 
-export default ({item: {title, image, tracks, link}}) => (
+export default ({item: {title, image, tracks, playList, link}}) => (
     <>
         <div className="album">
             <img height="300" width="300" src={image} alt="Album artwork" />
             <div className="album-info">
                 <p className="album-title">{title}</p>
-                <UL className="album-tracks" items={tracks} Component={Track} />
+                {playList ?
+                 <MusicPlayer playlist={playList} /> :
+                 <UL className="album-tracks" items={tracks} Component={Track} />}
             </div>
         </div>
-        <a className="button is-link" rel="noopener noreferrer" target="_blank" href={link.href}>{link.label}</a>
+        {link ? <a className="button is-link" rel="noopener noreferrer" target="_blank" href={link.href}>{link.label}</a> : null}
     </>
 );
