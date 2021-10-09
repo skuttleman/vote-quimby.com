@@ -15,6 +15,7 @@ export default ({item: {title, image, tracks, playList, link}}) => (
                  <UL className="album-tracks" items={tracks} Component={Track} />}
             </div>
         </div>
-        {link ? <a className="button is-link" rel="noopener noreferrer" target="_blank" href={link.href}>{link.label}</a> : null}
+        {link && link.href ? <a className="button is-link" rel="noopener noreferrer" target="_blank" href={link.href}>{link.label}</a> : null}
+        {link && !link.href ? <button className="button is-link" disabled={true} >{link.label}</button> : null}
     </>
 );

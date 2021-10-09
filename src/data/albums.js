@@ -1,4 +1,40 @@
 export default [{
+    image: 'https://m.media-amazon.com/images/I/41j10dZwH+L._SS500_.jpg',
+    title: 'Up & @Them',
+    tracks: [{
+        title: 'In and Of Itself'
+    },{
+        title: 'Closure'
+    },{
+        title: 'Drummer\'s Song'
+    },{
+        title: 'Drunk Dialing'
+    },{
+        title: 'Famine V: Salmon'
+    },{
+        title: 'Way Back Home'
+    },{
+        title: 'Almost Any Excuse Will Do'
+    },{
+        title: 'Imperial March'
+    },{
+        title: 'I\'m Immune'
+    },{
+        title: 'Protest Song 45'
+    },{
+        title: 'More Than Words'
+    },{
+        title: 'Planet Gets None'
+    },{
+        title: '#1 Fan'
+    },{
+        title: 'Fuct Urmum'
+    }],
+    link: {
+        label: 'Buy',
+        href: 'https://www.amazon.com/dp/B09H3NCGHT'
+    }
+},{
     image: 'https://vote-quimby.s3.amazonaws.com/images/just-cant-fuck.jpg',
     title: 'Just Can\'t Fuck this Last Pint of Musiclar Famine unless the Death Flight arrives by Next Friday (Theoretically)',
     playList: [{
@@ -87,8 +123,7 @@ export default [{
         title: 'Dancing in the Sheets (Extended 12" Remix)'
     }],
     link: {
-        label: 'Buy',
-        href: 'https://store.cdbaby.com/cd/votequimby2'
+        label: 'Sold Out'
     }
 },{
     image: 'https://vote-quimby.s3.amazonaws.com/images/adequately.jpg',
@@ -118,6 +153,6 @@ export default [{
     }],
     link: {
         label: 'Buy',
-        href: 'https://store.cdbaby.com/cd/votequimby'
+        href: 'https://www.amazon.com/Adequately-Prepared-Rock-Vote-Quimby/dp/B0015OCCK6/ref=sr_1_2?dchild=1&keywords=vote+quimby&qid=1633803018&s=dmusic&sr=1-2'
     }
 }];

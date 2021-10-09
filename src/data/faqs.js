@@ -22,4 +22,7 @@ export default [{
 }, {
     question: 'Really!?',
     answer: 'No.'
+}, {
+    question: 'Now that you\'ve released the new album, what\'s next?',
+    answer: 'Nothing. Nothing\'s next. We\'ve broken up. You won\'t hear from us again.'
 }];
